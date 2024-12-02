@@ -21,8 +21,6 @@ export const Header = () => {
                 <Link href={"/Explore"}>Explore</Link>
                 {user && user.userType === 'admin' && <Link href={"/Admin"}>Admin</Link>}
                 <div className='flex items-center gap-2 ml-auto'>
-                  <Search size={20}/>
-                  <Input placeholder='Find a movie' className='w-64 border-solid border-slate-500'/>
                   <Link href={'/Profile'}>
                     <Avatar>
                       <AvatarFallback className='bg-red-500 w-7 h-7'>U</AvatarFallback>
